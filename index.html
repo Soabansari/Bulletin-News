@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Bulletin News 24/7 hours live</title>
+    <link rel="stylesheet" href="style.css">
+     
+    <link rel="shortcut icon" href="favicon.ico.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav>
+        
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img class="bulletin-logo" src="./assets/basic_bulletin_logo-.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="education" onclick="onNavItemClick('education')">Education</li>
+                    <li class="hover-link nav-item" id="health" onclick="onNavItemClick('health')">Health</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Tecnology</li>
+                  
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder=" e.g. Delhi News">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+            
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+        
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">Global News 24/7</h3>
+                <h6 class="news-source" id="news-source">End Gadget 2026</h6>
+                <p class="news-desc" id="news-desc">Building a News : Data Journalism offers insights into building News website 2.0, emphasizing the integration of journalism's storytelling and public service with product development .</p>
+            </div>
+        </div>
+    </template>
+
+    <script  src="script.js"></script>
+</body>
+</html>
